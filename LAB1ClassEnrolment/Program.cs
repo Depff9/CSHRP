@@ -1,10 +1,11 @@
-﻿//Бряков Георгий
+﻿//Георгий Бряков
 using System;
 using System.Collections.Generic;
 
 class Program
 {
-    static Dictionary<string, (int capacity, List<string> students)> courses = new();
+    static Dictionary<string, (int capacity, List<(int id, string name)> students)> courses = new();
+    static int studentIdCounter = 1;
 
     static void Main()
     {
@@ -14,16 +15,23 @@ class Program
             Console.Write("Выберите опцию: ");
             string choice = Console.ReadLine();
 
-            switch (choice)
+            try
             {
-                case "1": AddCourse(); break;
-                case "2": ViewCourse(); break;
-                case "3": DeleteCourse(); break;
-                case "4": EnrollStudent(); break;
-                case "5": ViewStudents(); break;
-                case "6": RemoveStudent(); break;
-                case "7": return;
-                default: Console.WriteLine("Неверный выбор."); break;
+                switch (choice)
+                {
+                    case "1": AddCourse(); break;
+                    case "2": ViewCourse(); break;
+                    case "3": DeleteCourse(); break;
+                    case "4": EnrollStudent(); break;
+                    case "5": ViewStudents(); break;
+                    case "6": RemoveStudent(); break;
+                    case "7": return;
+                    default: Console.WriteLine("Неверный выбор."); break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка: {ex.Message}");
             }
         }
     }
@@ -34,7 +42,7 @@ class Program
         string name = Console.ReadLine();
         Console.Write("Вместимость: ");
         int capacity = int.Parse(Console.ReadLine());
-        courses[name] = (capacity, new List<string>());
+        courses[name] = (capacity, new List<(int id, string name)>());
         Console.WriteLine("Курс добавлен.");
     }
 
@@ -45,7 +53,7 @@ class Program
         if (courses.TryGetValue(name, out var course))
             Console.WriteLine($"Курс: {name}, Вместимость: {course.capacity}, Студентов: {course.students.Count}");
         else
-            Console.WriteLine("Курс не найден.");
+            throw new Exception("Курс не найден.");
     }
 
     static void DeleteCourse()
@@ -55,7 +63,7 @@ class Program
         if (courses.Remove(name))
             Console.WriteLine("Курс удален.");
         else
-            Console.WriteLine("Курс не найден.");
+            throw new Exception("Курс не найден.");
     }
 
     static void EnrollStudent()
@@ -63,14 +71,14 @@ class Program
         Console.Write("Название курса: ");
         string name = Console.ReadLine();
         Console.Write("Имя студента: ");
-        string student = Console.ReadLine();
+        string studentName = Console.ReadLine();
         if (courses.TryGetValue(name, out var course) && course.students.Count < course.capacity)
         {
-            course.students.Add(student);
+            course.students.Add((studentIdCounter++, studentName));
             Console.WriteLine("Студент записан.");
         }
         else
-            Console.WriteLine("Курс не найден или нет мест.");
+            throw new Exception("Курс не найден или нет мест.");
     }
 
     static void ViewStudents()
@@ -81,21 +89,40 @@ class Program
         {
             Console.WriteLine($"Студенты на курсе {name}:");
             foreach (var student in course.students)
-                Console.WriteLine(student);
+                Console.WriteLine($"ID: {student.id}, Имя: {student.name}");
         }
         else
-            Console.WriteLine("Курс не найден.");
+            throw new Exception("Курс не найден.");
     }
 
     static void RemoveStudent()
     {
         Console.Write("Название курса: ");
         string name = Console.ReadLine();
-        Console.Write("Имя студента: ");
-        string student = Console.ReadLine();
-        if (courses.TryGetValue(name, out var course) && course.students.Remove(student))
-            Console.WriteLine("Студент удален.");
+        Console.Write("ID студента: ");
+        if (int.TryParse(Console.ReadLine(), out int studentId))
+        {
+            if (courses.TryGetValue(name, out var course))
+            {
+                var student = course.students.Find(s => s.id == studentId);
+                if (student != default)
+                {
+                    course.students.Remove(student);
+                    Console.WriteLine("Студент удален.");
+                }
+                else
+                {
+                    throw new Exception("Студент не найден.");
+                }
+            }
+            else
+            {
+                throw new Exception("Курс не найден.");
+            }
+        }
         else
-            Console.WriteLine("Студент не найден.");
+        {
+            throw new Exception("Неверный ID студента.");
+        }
     }
 }
