@@ -1,0 +1,14 @@
+D:\3 курс\Академка\2sem\day2\LAB123\bin\Debug\net9.0\LAB123.exe
+D:\3 курс\Академка\2sem\day2\LAB123\bin\Debug\net9.0\LAB123.deps.json
+D:\3 курс\Академка\2sem\day2\LAB123\bin\Debug\net9.0\LAB123.runtimeconfig.json
+D:\3 курс\Академка\2sem\day2\LAB123\bin\Debug\net9.0\LAB123.dll
+D:\3 курс\Академка\2sem\day2\LAB123\bin\Debug\net9.0\LAB123.pdb
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.GeneratedMSBuildEditorConfig.editorconfig
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.AssemblyInfoInputs.cache
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.AssemblyInfo.cs
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.csproj.CoreCompileInputs.cache
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.dll
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\refint\LAB123.dll
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.pdb
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\LAB123.genruntimeconfig.cache
+D:\3 курс\Академка\2sem\day2\LAB123\obj\Debug\net9.0\ref\LAB123.dll
