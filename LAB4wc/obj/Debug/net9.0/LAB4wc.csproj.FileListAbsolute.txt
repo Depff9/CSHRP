@@ -1,0 +1,14 @@
+D:\Рабочий стол\CISHARP\day3\LAB4wc\bin\Debug\net9.0\LAB4wc.exe
+D:\Рабочий стол\CISHARP\day3\LAB4wc\bin\Debug\net9.0\LAB4wc.deps.json
+D:\Рабочий стол\CISHARP\day3\LAB4wc\bin\Debug\net9.0\LAB4wc.runtimeconfig.json
+D:\Рабочий стол\CISHARP\day3\LAB4wc\bin\Debug\net9.0\LAB4wc.dll
+D:\Рабочий стол\CISHARP\day3\LAB4wc\bin\Debug\net9.0\LAB4wc.pdb
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.GeneratedMSBuildEditorConfig.editorconfig
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.AssemblyInfoInputs.cache
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.AssemblyInfo.cs
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.csproj.CoreCompileInputs.cache
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.dll
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\refint\LAB4wc.dll
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.pdb
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\LAB4wc.genruntimeconfig.cache
+D:\Рабочий стол\CISHARP\day3\LAB4wc\obj\Debug\net9.0\ref\LAB4wc.dll
