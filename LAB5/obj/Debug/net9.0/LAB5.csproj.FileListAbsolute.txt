@@ -1,0 +1,14 @@
+D:\Рабочий стол\CISHARP\day5\LAB5\bin\Debug\net9.0\LAB5.exe
+D:\Рабочий стол\CISHARP\day5\LAB5\bin\Debug\net9.0\LAB5.deps.json
+D:\Рабочий стол\CISHARP\day5\LAB5\bin\Debug\net9.0\LAB5.runtimeconfig.json
+D:\Рабочий стол\CISHARP\day5\LAB5\bin\Debug\net9.0\LAB5.dll
+D:\Рабочий стол\CISHARP\day5\LAB5\bin\Debug\net9.0\LAB5.pdb
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.AssemblyInfoInputs.cache
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.AssemblyInfo.cs
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.csproj.CoreCompileInputs.cache
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.dll
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\refint\LAB5.dll
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.pdb
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\LAB5.genruntimeconfig.cache
+D:\Рабочий стол\CISHARP\day5\LAB5\obj\Debug\net9.0\ref\LAB5.dll
